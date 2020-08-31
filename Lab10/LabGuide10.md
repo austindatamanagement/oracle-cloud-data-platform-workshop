@@ -100,9 +100,13 @@ For more information please see [Data Safe Documentation](https://docs.oracle.co
 <!--Image 1.1-->
 ![](./images/SQLexecute.png "")<!--<br/>-->
 <!--<img src= "./images/SQLexecute.png" align="left" height="48"width="48">-->
-**NOTE** 1. If you don't have any data, populate your database with some new users and data to effectively use this lab. Use the script [here](https://objectstorage.us-phoenix-1.oraclecloud.com/n/orasenatdecaretlhealth01/b/Workshop/o/UsersScript.sql) to add new users.
+**OPTIONAL** 
+1. If you don't have any data, populate your database with some new users and data to effectively use this lab. 
+- Using a tool like SQL Developer, log in to your Autonomous Database as the Admin user (ADMIN).
+Use the script [here](https://objectstorage.us-phoenix-1.oraclecloud.com/n/orasenatdecaretlhealth01/b/Workshop/o/UsersScript.sql) to add new users. This script will add users for your database.
+- Log out of the Admin user.
 2. Login as **HCM1** user, use the script [here](https://objectstorage.us-phoenix-1.oraclecloud.com/n/orasenatdecaretlhealth01/b/Workshop/o/TableScript.sql) to add new tables to the HCM1 schema.
-
+- You now have users and data in your database.
 
 ## Part 2. Assess Database Configurations with Oracle Data Safe
 -	Using Oracle Data Safe you can assess the security of a database by using the Security Assessment feature and fix issues.
