@@ -111,7 +111,7 @@ The following table describes the available roles for Autonomous Databases [here
 
 1. Using a tool like SQL Developer, log in to your Autonomous Database as the Admin user (ADMIN).
 
-![](./images/1.22.png " ")
+    ![](./images/1.22.png " ")
 
 2. Grant or revoke a role from the Oracle Data Safe service account by running either one of the following commands, where role_name is the name of an Oracle Data Safe role, must be in single quotation marks.
 
@@ -123,7 +123,7 @@ The following table describes the available roles for Autonomous Databases [here
 	<copy> EXECUTE DS_TARGET_UTIL.REVOKE_ROLE('role_name'); </copy>
 	```
  	**NOTE** SQL REVOKE command removes user access rights or privileges to the database objects.
-	
+
 3. These are the roles you can add now to your SQL Developer worksheet.
 
 	```
@@ -138,13 +138,13 @@ The following table describes the available roles for Autonomous Databases [here
 
 	**NOTE** 1. If you don't have any data, populate your database with some new users and data to effectively use this lab. Use the script [here](https://objectstorage.us-phoenix-1.oraclecloud.com/n/orasenatdecaretlhealth01/b/Workshop/o/UsersScript.sql) to add new users.
 
-4. Login as **HCM1** user. 
+4. Login as **HCM1** user.
 
-![](./images/1.21.png " ")
+    ![](./images/1.21.png " ")
 
 5. Use the script [here](https://objectstorage.us-phoenix-1.oraclecloud.com/n/orasenatdecaretlhealth01/b/Workshop/o/TableScript.sql) to add new tables to the HCM1 schema.
 
-![](./images/1.23.png " ")
+    ![](./images/1.23.png " ")
 
 	**NOTE** These tables are basic HR data containing personal credentials that will be used later throughout the lab. You can use any data you would like, this is just good example data. This provides the ability to replicate the following lab.
 
@@ -385,8 +385,9 @@ Using Oracle Data Safe, verify a sensitive data model by using the verification 
 3. Click the **Refresh** button to view the newly added column.
 
 	![](./images/5.1.1.png " ")
+
 	**NOTE** This alteration will enact a small change that you will later see in Data Safe console.
-	
+
 4. Navigate to the Oracle Data Safe Service Console.
 
 5. In the Oracle Data Safe Console, click the **Library** tab, and then click **Sensitive Data Models**.
@@ -442,18 +443,19 @@ Using Oracle Data Safe, verify a sensitive data model by using the verification 
 
 	![](./images/5.4.1.png " ")
 	**NOTE** This alteration will allow you to change the data and delete the age column. This will reflect in the Data Safe console.
-	
+
 18. To verify that the EMPLOYEES table no longer has an AGE column, run the following script:
 
 	```
 	<copy> SELECT AGE FROM HCM1.EMPLOYEES; </copy>
 	```
-	
+
 19. Notice that the AGE column is gone and you receive an "Invalid Identifier" message when you run the command.
 
 	![](./images/5.4.2.png " ")
+
 	**NOTE** This error simply means you can no longer find the column you have just deleted.
-	
+
 20. If the AGE column is still there, click the **Refresh** button to refresh the table.
 
 21. Return to Oracle Data Safe.
@@ -521,8 +523,9 @@ Using Oracle Data Safe, perform an incremental update to a sensitive data model 
 3. AGE is added to the bottom of the list in the EMPLOYEES table.
 
 	![](./images/6.1.2.png " ")
+
 	**NOTE** Table alteration in this case means you have just added a new column.
-	
+
 4. Navigate to the Oracle Data Safe Service Console.
 
 5. In the Oracle Data Safe Console, click **Data Discovery**. The Select Target for Data Discovery page is displayed.
@@ -608,8 +611,9 @@ Using Oracle Data Safe, perform an incremental update to a sensitive data model 
 11. Notice that the department ID values are 10, 20, 30, up to 270.
 
 	![](./images/7.2.1.png " ")
-	**NOTE** We want to be able to see and retrieve these records from the Departments table in SQL to analyze it further.
 	
+	**NOTE** We want to be able to see and retrieve these records from the Departments table in SQL to analyze it further.
+
 12. Return to the **Sensitive Types** page in the Oracle Data Safe Console. Click **Add**.
 
 13. The **Create Sensitive Type** dialog box is displayed. - From the **Create Like** drop-down list, select **Employee ID Number**.
